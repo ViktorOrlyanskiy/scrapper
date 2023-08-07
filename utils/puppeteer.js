@@ -2,7 +2,7 @@ import puppeteer from "puppeteer-extra";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
 
 const LAUNCH_PUPPETEER_OPTIONS = { headless: true };
-const PAGE_OPTIONS = { arg: ["--window-size=1900x1080"] };
+const PAGE_OPTIONS = { arg: ["--no-sandbox"] };
 
 const URL = "https://www.auchan.ru/product/klubnika-zam-0-3kg/";
 const TIMEOUT = 4000;
