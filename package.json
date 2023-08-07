@@ -1,0 +1,26 @@
+{
+    "name": "scrapper",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "babel-node index.js",
+        "start2": "babel-node ./utils/puppeteer-extra.js"
+    },
+    "type": "module",
+    "author": "Viktor",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/cli": "^7.22.5",
+        "@babel/core": "^7.22.5",
+        "@babel/node": "^7.22.5",
+        "@babel/preset-env": "^7.22.5",
+        "chalk": "^5.2.0",
+        "cherio": "^1.0.0-rc.2",
+        "open": "^9.1.0",
+        "puppeteer": "^20.7.3",
+        "puppeteer-extra": "^3.3.6",
+        "puppeteer-extra-plugin-stealth": "^2.11.2",
+        "transliteration": "^2.3.5"
+    }
+}
