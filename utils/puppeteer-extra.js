@@ -5,7 +5,8 @@ import { writeFile } from "./writeFile.js";
 
 puppeteer.use(StealthPlugin());
 
-const URL = "https://bot.sannysoft.com/";
+const URL =
+    "https://www.ozon.ru/product/mor-uchenik-smerti-pratchett-terri-tsifrovaya-kniga-906202086/?sh=Fl05xC1KTQ";
 const TIMEOUT = 4000;
 
 puppeteer
