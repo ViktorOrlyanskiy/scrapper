@@ -5,7 +5,9 @@
     "main": "index.js",
     "scripts": {
         "start": "babel-node index.js",
-        "start2": "babel-node ./utils/puppeteer-extra.js"
+        "start:e": "babel-node ./utils/puppeteer-extra.js",
+        "start:w": "babel-node ./utils/puppeteer-extra-wb.js",
+        "start:p": "babel-node ./utils/parser.js"
     },
     "type": "module",
     "author": "Viktor",

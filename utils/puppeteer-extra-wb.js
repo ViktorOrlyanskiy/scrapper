@@ -5,8 +5,9 @@ import { writeFile } from "./writeFile.js";
 
 puppeteer.use(StealthPlugin());
 
-const URL = "https://goldapple.ru/28141600005-the-renaissance-circle";
-const TIMEOUT = 4000;
+const URL =
+    "https://www.wildberries.ru/catalog/150450527/detail.aspx?targetUrl=SN";
+const TIMEOUT = 8000;
 
 puppeteer
     .launch({ headless: true, args: ["--no-sandbox"] })
@@ -30,9 +31,13 @@ puppeteer
         await page.goto(URL);
         await page.waitForTimeout(TIMEOUT);
 
+        await page.evaluate(() => {
+            window.scrollTo(0, document.body.scrollHeight);
+        });
+
         const content = await page.content();
         writeFile("content", content);
-        console.log(content);
+
         await page.screenshot({ path: "testresult.png", fullPage: true });
         await browser.close();
         console.log(`All done, check the screenshot. ✨`);

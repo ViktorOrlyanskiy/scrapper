@@ -2,7 +2,6 @@ import cheerio from "cherio";
 import chalk from "chalk";
 import fs from "fs";
 
-import { arrayFromLength } from "./utils/common.js";
 import { getPageContent } from "./utils/puppeteer.js";
 import { writeFile } from "./utils/writeFile.js";
 
